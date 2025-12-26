@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Especiales de Hoy | WhatsApp</title>
+
+  <style>
+    :root{
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --border:#e5e7eb;
+      --primary:#ef4444; /* rojo promo */
+      --accent:#22c55e;  /* verde fresco */
+    }
+
+    *{ box-sizing:border-box }
+
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    a{ text-decoration:none }
+
+    /* BANNER */
+    .banner{
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      padding: 10px 0;
+    }
+    .banner .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:#fff1f2;
+      color:#be123c;
+      font-weight:800;
+      font-size:12px;
+      border:1px solid #fecdd3;
+    }
+
+    /* HERO */
+    .hero{
+      background:#ffffff;
+      border-bottom:1px solid var(--border);
+      padding:60px 0;
+    }
+
+    .hero h1{
+      font-size:44px;
+      letter-spacing:-0.03em;
+      margin:10px 0 10px;
+    }
+
+    .hero p{
+      font-size:18px;
+      color:var(--muted);
+      max-width:760px;
+      margin:0 0 22px;
+    }
+
+    .cta{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .btn{
+      padding:16px 26px;
+      border-radius:14px;
+      font-weight:900;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      line-height:1;
+      font-size:16px;
+      cursor:pointer;
+      border:0;
+    }
+
+    .btn-primary{
+      background:var(--primary);
+      color:#fff;
+    }
+
+    .micro{
+      margin-top:10px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    section{ padding:46px 0 }
+
+    h2{
+      font-size:24px;
+      margin:0 0 16px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:22px;
+    }
+
+    .icon{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    .card h3{ margin:0 0 6px }
+    .card p{ margin:0; color:var(--muted) }
+
+    .steps{
+      background:#ffffff;
+      border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+      padding:40px 18px;
+      text-align:center;
+    }
+
+    footer{
+      padding:28px 0;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:800px){
+      .grid{ grid-template-columns:1fr }
+      .hero h1{ font-size:34px }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BANNER -->
+  <div class="banner">
+    <div class="container">
+      <span class="pill">🔥 HOY · CANTIDADES LIMITADAS</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h1>🔥 ESPECIALES QUE SE ACABAN HOY</h1>
+      <p>
+        Escribe <b>“OFERTA”</b> y te enviamos los especiales del día por WhatsApp.
+        Rápido, directo y sin complicaciones.
+      </p>
+
+      <div class="cta">
+        <a class="btn btn-primary" id="waBtnTop" href="#">
+          📲 Escribirme “OFERTA” ahora
+        </a>
+      </div>
+
+      <div class="micro">
+        Gratis · Sin spam · Puedes salir cuando quieras
+      </div>
+    </div>
+  </header>
+
+  <!-- WHAT YOU GET -->
+  <section>
+    <div class="container">
+      <h2>Lo que puedes pedir hoy</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🥩</div>
+          <h3>Carnes</h3>
+          <p>Especiales del día y cantidades limitadas.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🥬</div>
+          <h3>Frescos</h3>
+          <p>Frutas, vegetales y productos recién llegados.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🧾</div>
+          <h3>Ahorros</h3>
+          <p>Descuentos y combos para ahorrar en la compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <div class="steps">
+    <h2>¿Cómo funciona?</h2>
+    <p>Escribes <b>OFERTA</b> · Te enviamos los especiales · Pasas por la tienda</p>
+  </div>
+
+  <!-- CTA FINAL -->
+  <section>
+    <div class="container" style="text-align:center">
+      <div class="cta" style="justify-content:center">
+        <a class="btn btn-primary" id="waBtnBottom" href="#">
+          📲 Pedir ofertas ahora
+        </a>
+      </div>
+      <div class="micro" style="margin-top:12px">
+        Respuesta en horario de tienda
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Demo de captación · Canal WhatsApp · Hecho para generar mensajes hoy
+  </footer>
+
+  <script>
+    // ✅ CAMBIA SOLO ESTE NÚMERO (formato PR/US: 1 + 10 dígitos)
+    const PHONE = "1XXXXXXXXXX"; // ej: 17875551234
+    const TEXT  = "Hola, OFERTA. ¿Cuáles son los especiales de hoy?";
+
+    function waLink(){
+      return `https://api.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent(TEXT)}`;
+    }
+
+    document.getElementById("waBtnTop").href = waLink();
+    document.getElementById("waBtnBottom").href = waLink();
+  </script>
+
+</body>
+</html>
